@@ -54,7 +54,7 @@ jobs:
                - Uno o más de área: `area: rendering`, `area: controls`, `area: gameplay`, `area: ui`.
                - Usa SOLO labels que existan en el repo; no crees labels nuevos.
                - Si el issue fue editado, revisa los labels actuales y quita con `--remove-label` los de tipo, prioridad o área que ya no apliquen.
-            6. Escribe el diagnóstico en español, en Markdown, en el archivo `triage.md`, con este formato y empezando por la línea `<!-- claude-triage -->`:
+            6. Escribe el diagnóstico en español en el archivo `triage.md`. Todo lo que comentes debe estar en formato Markdown que GitHub (GitHub Flavored Markdown) renderice correctamente: encabezados con `##`, negritas con `**`, listas con `-` o `1.`, código en línea con comillas invertidas, bloques de código con triple comilla invertida y lenguaje (```js), y referencias a código como `game.js:NN`. No uses HTML (salvo el comentario inicial) ni sintaxis que GitHub no soporte. Usa este formato, empezando por la línea `<!-- claude-triage -->`:
 
                ## 🔎 Diagnóstico automático
                **Resumen:** una o dos frases.
