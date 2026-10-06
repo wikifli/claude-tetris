@@ -33,9 +33,9 @@
         <div class="panel-section controls">
           <span class="label">CONTROLS</span>
           <ul>
-            <li><kbd>←</kbd><kbd>→</kbd> mover</li>
-            <li><kbd>↑</kbd> rotar</li>
-            <li><kbd>↓</kbd> bajar</li>
+            <li><kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd> mover</li>
+            <li><kbd>W</kbd> / <kbd>↑</kbd> rotar</li>
+            <li><kbd>S</kbd> / <kbd>↓</kbd> bajar</li>
             <li><kbd>Space</kbd> caída</li>
             <li><kbd>P</kbd> pausa</li>
           </ul>
@@ -52,6 +52,9 @@
     </div>
   </div>
 
+  <script>
+(()=>{const d=Object.getOwnPropertyDescriptor(KeyboardEvent.prototype,'code');Object.defineProperty(KeyboardEvent.prototype,'code',{configurable:true,get(){const k=this.key;return /^Arrow(Up|Down|Left|Right)$/.test(k)?k:d.get.call(this)}})})()
+  </script>
   <script src="game.js"></script>
 </body>
 </html>

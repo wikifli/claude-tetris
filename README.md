@@ -80,9 +80,9 @@ Después abre `http://localhost:8000` en el navegador.
 
 | Tecla     | Acción                            |
 | --------- | --------------------------------- |
-| `←` / `→` | Mover la pieza horizontalmente    |
-| `↑` o `X` | Rotar la pieza en sentido horario |
-| `↓`       | Soft drop (bajar más rápido)      |
+| `A` / `D` o `←` / `→` | Mover la pieza horizontalmente    |
+| `W`, `↑` o `X` | Rotar la pieza en sentido horario |
+| `S` o `↓` | Soft drop (bajar más rápido)      |
 | `Espacio` | Hard drop (caída instantánea)     |
 | `P`       | Pausar / reanudar                 |
 
